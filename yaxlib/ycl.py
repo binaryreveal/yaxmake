@@ -38,7 +38,7 @@ class YaxCommandLineParser:
         return items[1].strip()
 
     def _version(self):
-        print "Yaxmake version %d.%d.%d" % (ver.yax_version[0], ver.yax_version[1], ver.yax_version[2])
+        print "Yaxmake version %d.%d.%d" % (yver.yax_version[0], yver.yax_version[1], yver.yax_version[2])
         sys.exit(0)
 
     def _usage(self):
