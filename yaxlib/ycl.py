@@ -6,6 +6,7 @@ import sys
 import ytk
 import yver
 import ylang
+import ymessage
 
 class YaxCommandLineParser:
 
@@ -84,6 +85,9 @@ class YaxCommandLineParser:
         env.setDebugMode(self._debug_mode)
         env.setCleanMode(self._clean_mode)
         env.setVerboseMode(self._verbose_mode)
+        
+        if not os.path.isfile(self._inputFile):
+            ymessage.fatal("Missing input file!")
 
     def getInputFile(self):
         return self._inputFile
