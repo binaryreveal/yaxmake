@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'yaxmake',
-    version = '0.1.2',
+    version = '0.1.3',
     description = 'Yet another cross make tool',
     author = 'jIeZHaNG',
     author_email = 'binaryreveal@gmail.com',
